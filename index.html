@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Loading -->
+    <div
+      class="position-fixed w-100 h-100 justify-content-center align-items-center loading"
+      id="loading"
+      background="#0008"
+      ,
+      color="white"
+      ,
+      top="0,"
+      left="0,"
+      zIndex="9"
+    >
+      <svg width="205" height="250" viewBox="0 0 40 50">
+        <polygon
+          strokeWidth="1"
+          stroke="#fff"
+          fill="one"
+          points="20, 1 40,40 1,40"
+        ></polygon>
+        <text fill="#fff" x="5" y="47">Loading</text>
+      </svg>
+    </div>
+    <!--End Loading -->
+
+    <!-- Scroll up -->
+    <div class="scroll-up-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+    <!--End Scroll up -->
+
+    <!-- navbar area -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#">Portfo<span>lio.</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home" class="menu-btn">Home</a></li>
+          <li><a href="#aboutMe" class="menu-btn">About</a></li>
+          <li><a href="#mySkills" class="menu-btn">Skills</a></li>
+          <li><a href="#award" class="menu-btn">Resume</a></li>
+          <li><a href="#portfolio" class="menu-btn">Portfolio</a></li>
+          <li><a href="#contact" class="menu-btn">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!--End navbar area -->
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="home__content">
+          <div class="text-1">Welcome!</div>
+          <div class="text-2">I'm <span class="typing"></span></div>
+          <div class="text-3">
+            I love learning new technologies and building valuable application
+            that helps others with their work. I’m considered a team-player
+            because I like to help other and tend to work well within the group.
+          </div>
+        </div>
+      </div>
+      <img src="./img/3092bba8e1fd32a36bec.jpg" alt="img" />
+    </section>
+    <!--End home section -->
+
+    <!-- Social -->
+    <div class="social">
+      <div class="button">
+        <a
+          href="https://www.facebook.com/profile.php?id=100011516224633"
+          target="_blank"
+        >
+          <div class="icon"><i class="fab fa-facebook-f"></i></div>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <div class="button">
+        <a href="https://www.instagram.com/sol.nvh/" target="_blank">
+          <div class="icon"><i class="fab fa-instagram"></i></div>
+          <span>Instagram</span>
+        </a>
+      </div>
+      <div class="button">
+        <a href="https://github.com/Hieunv7801" target="_blank">
+          <div class="icon"><i class="fab fa-github"></i></div>
+          <span>Github</span>
+        </a>
+      </div>
+    </div>
+    <!--End Social -->
+
+    <!-- custom button download -->
+    <div class="pos-btn">
+      <a href="./HieuNV_FRESHER.pdf" class="custom-btn" download
+        ><i class="fas fa-download"></i>Download CV</a
+      >
+    </div>
+    <!-- end custom button download -->
+
+    <!-- about section -->
+    <section class="aboutMe" id="aboutMe">
+      <div class="aboutMe__background"></div>
+      <div class="container aboutMe__content">
+        <h2 class="title">About Me</h2>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 myIMG">
+            <img
+              src="./img/totnghiep.jpg"
+              alt=""
+              class="img-fluid"
+              width="500px"
+            />
+          </div>
+          <div class="myInfo col-sm-12 col-lg-6">
+            <ul>
+              <li>
+                <p class="myInfo__content">
+                  <span class="myInfo__icon">
+                    <i class="fa fa-user" aria-hidden="true"></i>Name:
+                  </span>
+                  <span class="myInfo__text"> Nguyen Van Hieu </span>
+                </p>
+              </li>
+
+              <li>
+                <p class="myInfo__content">
+                  <span class="myInfo__icon">
+                    <i class="fas fa-map-marker-alt"></i>Address:
+                  </span>
+                  <span class="myInfo__text"> Duy Xuyen, Quang Nam </span>
+                </p>
+              </li>
+
+              <li>
+                <p class="myInfo__content">
+                  <span class="myInfo__icon">
+                    <i class="fas fa-envelope"></i>Email:
+                  </span>
+                  <span class="myInfo__text"> hieunv0708@gmail.com </span>
+                </p>
+              </li>
+
+              <li>
+                <p class="myInfo__content">
+                  <span class="myInfo__icon">
+                    <i class="fas fa-phone-alt"></i>Phone:
+                  </span>
+                  <span class="myInfo__text"> 035 793 8256 </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End about section -->
+
+    <!-- skills section -->
+    <section class="mySkills" id="mySkills">
+      <h2 class="title">My Skills</h2>
+      <div class="container mySkills__content">
+        <div class="row card__Center">
+          <div class="card col-sm-12 col-md-4">
+            <h1>HTML/CSS</h1>
+            <div class="card__content">
+              <div class="card__item">
+                <img src="./img/html-5-logo.png" alt="" />
+              </div>
+              <div class="card__item">
+                <img src="./img/CSS3_logo_and_wordmark.svg.png" alt="" />
+              </div>
+              <div class="card__item">
+                <img src="./img/bootstrap.png" alt="" />
+              </div>
+              <div class="card__item">
+                <img src="./img/sass.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-4">
+            <h1>JAVASCRIPT</h1>
+            <div class="card__content">
+              <div class="card__item">
+                <span>ES5/ES6</span>
+              </div>
+              <div class="card__item">
+                <img src="./img/Jquery.svg.png" alt="" />
+              </div>
+              <div class="card__item">
+                <span>Axios</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-4">
+            <h1>REACTJS</h1>
+            <div class="card__content">
+              <div class="card__item">
+                <span>ReactJS</span>
+              </div>
+              <div class="card__item">
+                <span>Router</span>
+              </div>
+              <div class="card__item">
+                <span>React Hooks</span>
+              </div>
+              <div class="card__item">
+                <span>Redux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row card__Center">
+          <div class="card col-sm-12 col-md-3">
+            <h1>VERSION CONTROL</h1>
+            <div class="card__content">
+              <div class="card__item">
+                <span>Git basic</span>
+              </div>
+              <div class="card__item">
+                <span>SVN</span>
+              </div>
+            </div>
+          </div>
+          <div class="card col-sm-12 col-md-3">
+            <h1>JAVA</h1>
+            <div class="card__content">
+              <div class="card__item">
+                <span>JAVA CORE</span>
+              </div>
+              <div class="card__item">
+                <span>JSP SERVLET</span>
+              </div>
+              <div class="card__item">
+                <span>SPRING BOOT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-3">
+            <h1>SOFT SKILLS</h1>
+            <div class="card__content">
+              <div class="card__item">
+                <span>Teamwork</span>
+              </div>
+              <div class="card__item">
+                <span>Self study</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-sm-12 col-md-3">
+            <h1>LANGUAGE</h1>
+            <div class="card__content">
+              <div class="card__item">
+                <span>Certificate in English at FPT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End skills section -->
+
+    <!-- My Resume -->
+    <section class="award" id="award">
+      <h2 class="title">My Resume</h2>
+      <div class="award__content container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019 - 2022</div>
+            <div class="timeline-content">
+              <h3>Student (FPT PolyTechnic College)</h3>
+              <p>Bachelor of Information Technology</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021/07 - 2021/10</div>
+            <div class="timeline-content">
+              <h3>Internship ( Green Global )</h3>
+              <p>
+                Get and complete tasks related to Zk framework, attend back-end
+                training.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022/03 - 09/2022</div>
+            <div class="timeline-content">
+              <h3>Cybersoft - Cyberlearn Programing Education Center</h3>
+              <p>Professional Front-end programming course</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023/03 - Present</div>
+            <div class="timeline-content">
+              <h3>Fresher FullStack Web (FPT Software)</h3>
+              <p>Trained in Java and React knowledge and some other.</p>
+              <p>
+                Tasked with completing several personal projects using Java and
+                React Js
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End My Resume -->
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="title">My Portfolio</h2>
+      <div class="container">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="imgPJ">
+                <img
+                  src="./img/movie.jpg"
+                  class="d-block w-100"
+                  alt="img_tag"
+                />
+              </div>
+              <div class="carousel-caption">
+                <h3 class="titleProject">Book Movie Tickets</h3>
+                <div class="project__content">
+                  <ul>
+                    <li>
+                      <span class="sub1">Description: </span>
+                      <span class="sub2"
+                        >A full-featured user interface website for booking,
+                        login, registration</span
+                      >
+                    </li>
+                    <li>
+                      <span class="sub1">Responsibility: </span>
+                      <span class="sub2">Development</span>
+                    </li>
+                    <li>
+                      <span class="sub1">Technology: </span>
+                      <span class="sub2"
+                        >React JS, Redux Thunk ,HTML5, CSS3, SCSS/SASS, Tailwind
+                        CSS, Javascrip.</span
+                      >
+                    </li>
+                    <li style="list-style: none">
+                      <a
+                        href="https://github.com/Hieunv7801/bc-29_duan_movie"
+                        target="_blank"
+                      >
+                        <button class="custom-btn">Read More</button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="imgPJ">
+                <img
+                  src="./img/portfolio.jpg"
+                  class="d-block w-100"
+                  alt="img_tag"
+                />
+              </div>
+              <div class="carousel-caption">
+                <h3 class="titleProject">My Portfolio</h3>
+                <div class="project__content">
+                  <ul>
+                    <li>
+                      <span class="sub1">Description: </span>
+                      <span class="sub2"
+                        >My portfolio where you can get my information online
+                        and visit my done projects.</span
+                      >
+                    </li>
+                    <li>
+                      <span class="sub1">Responsibility: </span>
+                      <span class="sub2">Development.</span>
+                    </li>
+                    <li>
+                      <span class="sub1">Technology: </span>
+                      <span class="sub2"
+                        >HTML5, CSS3, Javascript, Bootstrap.</span
+                      >
+                    </li>
+                    <li style="list-style: none">
+                      <a
+                        href="https://github.com/Hieunv7801/Portfolio-main"
+                        target="_blank"
+                      >
+                        <button class="custom-btn">Read More</button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="imgPJ">
+                <img
+                  src="./img/earphone.jpg"
+                  class="d-block w-100"
+                  alt="img_tag"
+                />
+              </div>
+              <div class="carousel-caption">
+                <h3 class="titleProject">Ecommerce</h3>
+                <div class="project__content">
+                  <ul>
+                    <li>
+                      <span class="sub1">Description: </span>
+                      <span class="sub2"
+                        >Build an ecommerce website that allow to search, select
+                        and order products on the webiste. Allows payment by VN
+                        Pay and cash, users can track order status. Beside that,
+                        admin can manage user, product and order status.</span
+                      >
+                    </li>
+                    <li>
+                      <span class="sub1">Responsibility: </span>
+                      <span class="sub2">Development</span>
+                    </li>
+                    <li>
+                      <span class="sub1">Technology: </span>
+                      <span class="sub2"
+                        >React JS ,HTML5, CSS3,Bootstrap, Java Spring JPA.</span
+                      >
+                    </li>
+                    <li style="list-style: none">
+                      <a
+                        href="https://github.com/Hieunv7801/bc-29_duan_movie"
+                        target="_blank"
+                      >
+                        <button class="custom-btn">Read More</button>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--End Portfolio -->
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="title">Contact me</h2>
+      <div class="container">
+        <div class="contact__content">
+          <div class="column left">
+            <i class="fas fa-user"></i>
+            <span>Full Name</span>
+            <p>Nguyen Van Hieu</p>
+          </div>
+          <div class="column left">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Address</span>
+            <p>Duy Xuyen, Quang Nam</p>
+          </div>
+          <div class="column right">
+            <i class="fas fa-envelope"></i>
+            <span>Email</span>
+            <p>hieunv0708@gmail.com</p>
+          </div>
+          <div class="column right">
+            <i class="fas fa-phone"></i>
+            <span>Phone number</span>
+            <p>035 793 8256</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact -->
+
+    <footer>
+      <div class="container">
+        <span
+          >Createdby<a>Hieunv</a><span class="far fa-copyright"></span>2023 all
+          rights reserved</span
+        >
+      </div>
+    </footer>
+
+    <!--script-->
+
+    <script src="./timeline.js"></script>
+    <script src="./script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      window.addEventListener("load", function () {
+        // const loader = document.querySelector(".loading");
+        // loader.className += "hidden"
+        const noneLoading = document.getElementById("loading");
+        noneLoading.style.display = "none";
+      });
+    </script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
+    <script>
+      $(".menu-btn").click(function () {
+        $(".navbar .menu").toggleClass("active");
+        $(".menu-btn i").toggleClass("active");
+      });
+    </script>
+  </body>
+</html>
